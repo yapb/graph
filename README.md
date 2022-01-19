@@ -4,7 +4,7 @@ This repository contains the graph files (waypoints) that are available to [YaPB
 
 If you need a waypoint for your map, please fill the Issue Request, so someone could make it for you. Or, even better try to make it yourself.
 
-## Tutorial on how to make the waypints
+## Tutorial on how to make the waypoints
 * English: https://docs.yapb.ru/en/latest/waypointing.html
 * Russian: https://docs.yapb.ru/ru/latest/waypointing.html
 
