@@ -14,4 +14,4 @@ You can upload your work with issuing ''yb graph upload''. Bot will upload your 
 You cannot overwrite existing graph files, if you believe you created better one, than existing, please fill the Issue Request.
 
 ## Credits
-All graph files contains the author of that graph files. When you saving new one, author is overwritten. So please, keep the name of original author, when you modify exiting one.
+All graph files contains the author of that graph files. When you saving new one, author is overwritten. So please, keep the name of original author, when you modify existing one.
