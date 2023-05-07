@@ -1,0 +1,20 @@
+name: Update Credits
+
+on: push
+
+jobs:
+  update-credits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.head_ref }}
+      - name: Configure meson
+        shell: bash
+        run: |
+            chmod +x ./bin/gtool && ./bin/gtool -L graph
+      - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: credits: update credits
