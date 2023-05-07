@@ -1,7 +1,9 @@
 name: Update Credits
 
-on: push
-
+on:
+  schedule:
+  - cron: "30 1 1,15 * *"
+  
 jobs:
   update-credits:
     runs-on: ubuntu-latest
