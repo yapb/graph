@@ -9,7 +9,7 @@ on:
     branches: [master]
     paths: ['graph/**']
   schedule:
-    - cron: '23 * * * *'
+    - cron: '17 3 * * *'
   workflow_dispatch:
 
 jobs:
