@@ -7,8 +7,8 @@ If you need a waypoint for your map, please fill the Issue Request, so someone c
 Note to waypoint creators: if you've started working on a waypoint request, say you're working on it. This will avoid unnecessary work for another waypoint creator.
 
 ## Tutorial on how to make the waypoints
-* English: https://yapb.readthedocs.io/en/latest/waypointing.html
-* Russian: https://yapb.readthedocs.io/ru/latest/waypointing.html
+* English: https://yapb.github.io/docs/en/waypointing/
+* Russian: https://yapb.github.io/docs/ru/waypointing/
 
 ## Uploading graph files
 You can upload your work with issuing ''yb graph upload''. Bot will upload your graph files to database. Note that graph file should pass internal sanity checks, and should look OK, else it's won't be uploaded.

@@ -1,0 +1,35 @@
+name: Update graph index
+
+# Flat listing of graph/ for the graph-worker: one `<sha> <size> <path>`
+# line per .graph blob. The worker reads graph.idx instead of the 2.5MB
+# recursive-trees API response (no API quota burn, no 10ms-CPU JSON parse).
+# Trigger is scoped to graph/**, so committing graph.idx itself never loops.
+on:
+  push:
+    branches: [master]
+    paths: ['graph/**']
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Build graph.idx
+        shell: bash
+        run: |
+          git ls-tree -r -l HEAD --format='%(objectname) %(objectsize) %(path)' -- graph \
+            | grep -i '\.graph$' \
+            | sort -t ' ' -k3 \
+            > graph.idx
+          wc -l graph.idx
+      - name: Commit graph.idx
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'index: update graph.idx'
