@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.head_ref }}
+          ref: master
       - name: Update credits
         shell: bash
         run: |
@@ -21,4 +21,4 @@ jobs:
       - name: Update credits
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit-message: "credits: update credits"
+          commit_message: "credits: update credits"
