@@ -74,8 +74,8 @@ def collect(folder: Path):
             print(f"ERROR {path}", file=sys.stderr)
             continue
 
-        # strip the ".graph" suffix, keep the path relative to the repo
-        name = path.as_posix()
+        # plain map name: the file name without the ".graph" suffix
+        name = path.name
         if name.endswith(".graph"):
             name = name[:-6]
 
