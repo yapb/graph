@@ -19,3 +19,11 @@ You cannot overwrite existing graph files, if you believe you created better one
 Since YaPB v4.2.698, when modifying a graph file, the name of original author is preserved. The modifier's nickname will also be displayed with the addition "Modified by: (nickname)".
 
 Note that modifier's nickname will not be displayed on previous versions of the bot.
+
+## Licensing
+
+* Everything but the graph files (this README, scripts, workflows, etc.) is released into the public domain under the [Unlicense](LICENSE).
+* The graph files (all files under `graph/`) are licensed under [CC BY-SA 4.0](LICENSE-GRAPH).
+
+The credits file is generated from the graph files, so the authorship information for individual waypoints is preserved in [CREDITS.md](CREDITS.md). The license on the graph files as a whole does not override the rights of the individual waypoint authors listed there.
+
