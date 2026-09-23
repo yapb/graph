@@ -15,6 +15,8 @@ You can upload your work with issuing ''yb graph upload''. Bot will upload your 
 
 You cannot overwrite existing graph files, if you believe you created better one, than existing, please fill the Issue Request.
 
+By uploading a graph file you agree to release it under the [CC BY-SA 4.0](LICENSE-GRAPH) license that covers this database.
+
 ## [Credits](CREDITS.md)
 Since YaPB v4.2.698, when modifying a graph file, the name of original author is preserved. The modifier's nickname will also be displayed with the addition "Modified by: (nickname)".
 
